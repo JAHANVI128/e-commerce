@@ -1,29 +1,34 @@
-import React from 'react'
-import './Navbar.css'
-import logo from 'C:\Projects\e-commerce\src\Components\Assests\logo.png'
-import like from 'C:\Projects\e-commerce\src\Components\Assests\Like.png'
-import cart from 'C:\Projects\e-commerce\src\Components\Assests\Cart.png'
-import profile from 'C:\Projects\e-commerce\src\Components\Assests\Profile.png'
+import React from "react";
+import "./Navbar.css";
+import logo from "../Assets/logo.png";
+import like from "../Assets/Like.png";
+import cart from "../Assets/Cart.png";
+import profile from "../Assets/Profile.png";
+// import SearchBar from './SearchBar'
 
 const Navbar = () => {
   return (
     <div className="navbar">
-      <div className="nav_logo">
+      <div className="nav-logo">
         <img src={logo} alt="Logo" />
       </div>
-      <ul className="nav_menu">
-        <li>Search</li>
+      <ul className="nav-menu">
+        {/* <li><SearchBar></SearchBar></li> */}
         <li>Home</li>
         <li>Categories</li>
-        <li>Order</li>
+        <li>
+          Orders
+          <div className="nav-order-count">1</div>
+        </li>
       </ul>
       <div className="nav-login-cart">
-        <img src={like} alt="Like" />
-        <img src={cart} alt="Cart" />
-        <img src={profile} alt="Profile" />
+        <img className="like" src={like} alt="Like" />
+        <img className="cart" src={cart} alt="Cart" />
+        <div className="nav-cart-count">0</div>
+        <img className="profile" src={profile} alt="Profile" />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

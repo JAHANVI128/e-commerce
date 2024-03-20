@@ -8,7 +8,6 @@ top: 539px;
 
 border-radius: 20px; */
 
-
 /* Rectangle 3 */
 
 /* position: absolute;
@@ -20,7 +19,6 @@ bottom: 0.13%;
 background: url(image.png);
 border-radius: 18px; */
 
-
 /* Rectangle 3 */
 
 /* position: absolute;
@@ -31,7 +29,6 @@ bottom: 0.13%;
 
 background: url(image.png), url(image.png);
 border-radius: 18px; */
-
 
 /* Rectangle 4 */
 
@@ -46,3 +43,114 @@ border-radius: 18px; */
 /* // Image: image;
 background: url("image.png");
 background-size: cover; */
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  /* padding: 16px; */
+  width: 1600px;
+  height: 70px;
+  gap: 9px;
+  opacity: 0px;
+  box-shadow: 0px -2px 10px 0px #00000040;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 119px;
+  height: 67px;
+  left: 83px;
+  opacity: 0px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  width: 51px;
+  height: 22px;
+  top: 22.5px;
+  left: 791px;
+  gap: 45px;
+  opacity: 0px;
+  font-family: Inter, "Courier New", Courier, monospace;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.78px;
+  text-align: left;
+}
+
+.nav-menu li {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  cursor: pointer;
+  top: 7.5px;
+}
+
+.nav-login-cart {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-login-cart .like {
+  width: 24px;
+  height: 21.16px;
+  left: 1138px;
+  top: 20px;
+  border: 2px 0px 0px 0px;
+  gap: 0px;
+  opacity: 0px;
+  cursor: pointer;
+}
+
+.nav-login-cart .cart {
+  width: 21px;
+  height: 20px;
+  /* top: 23.5px;
+  left: 1187px; */
+  /* gap: 0px; */
+  /* border: 108px 0px 0px 0px; */
+  /* opacity: 0px; */
+  cursor: pointer;
+}
+
+.nav-cart-count {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -23px;
+  margin-left: -36px;
+  border-radius: 21px;
+  font-size: 12px;
+  background-color: black;
+  color: white;
+}
+
+.nav-order-count {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -23px;
+  margin-left: 85px;
+  border-radius: 11px;
+  font-size: 14px;
+  background-color: black;
+  color: white;
+  gap: 6px;
+}
+
+.nav-login-cart .profile {
+  cursor: pointer;
+  display: flex;
+}
