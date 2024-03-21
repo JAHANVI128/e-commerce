@@ -5,19 +5,30 @@ import like from "../Assets/Like.png";
 import cart from "../Assets/Cart.png";
 import profile from "../Assets/Profile.png";
 import SearchBar from './SearchBar'
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
+
+  const [menu, setmenu] = useState("home");
+
   return (
     <div className="navbar">
       <div className="nav-logo">
         <img src={logo} alt="Logo" />
       </div>
       <ul className="nav-menu">
-        <SearchBar/>
-        <li>Home</li>
-        <li>Categories</li>
-        <li>
-          Orders
+        <SearchBar />
+
+        <li onClick={ () => { setmenu("home") }}> 
+          <Link to = '/'> Home </Link> {menu === "home" ? <hr /> : <></>}
+        </li>
+
+        <li onClick={() => { setmenu("categories") }}>
+        <Link to = '/category'> Categories </Link> {menu === "categories" ? <hr /> : <></>}
+        </li>
+
+        <li onClick={() => { setmenu("orders") }}>
+        <Link to = '/orders'> Orders </Link> {menu === "orders" ? <hr /> : <></>}
           <div className="nav-order-count">1</div>
         </li>
       </ul>
