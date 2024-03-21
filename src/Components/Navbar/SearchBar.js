@@ -51,7 +51,7 @@ const SearchBar = () => {
   return (
     <div className="searchBarSection">
       <div class="searchBar">
-        <input className="input" />
+        {/* <input className="input" /> */}
         <button className="button">
           <img src={search} alt="search"/>
         </button>

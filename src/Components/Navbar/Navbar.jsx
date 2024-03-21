@@ -4,7 +4,7 @@ import logo from "../Assets/logo.png";
 import like from "../Assets/Like.png";
 import cart from "../Assets/Cart.png";
 import profile from "../Assets/Profile.png";
-// import SearchBar from './SearchBar'
+import SearchBar from './SearchBar'
 
 const Navbar = () => {
   return (
@@ -13,7 +13,7 @@ const Navbar = () => {
         <img src={logo} alt="Logo" />
       </div>
       <ul className="nav-menu">
-        {/* <li><SearchBar></SearchBar></li> */}
+        <SearchBar/>
         <li>Home</li>
         <li>Categories</li>
         <li>

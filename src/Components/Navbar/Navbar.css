@@ -61,7 +61,8 @@ background-size: cover; */
   gap: 10px;
   width: 119px;
   height: 67px;
-  left: 83px;
+  position: relative;
+  left: -83px;
   opacity: 0px;
 }
 
@@ -90,20 +91,25 @@ background-size: cover; */
   justify-content: center;
   gap: 1px;
   cursor: pointer;
-  top: 7.5px;
+  top: 5.5px;
+  left: -372px;
 }
 
 .nav-login-cart {
   display: flex;
   align-items: center;
   gap: 30px;
+  position: relative;
+  left: 25px;
+  
 }
 
 .nav-login-cart .like {
-  width: 24px;
-  height: 21.16px;
-  left: 1138px;
-  top: 20px;
+  width: 28px;
+  height: 25.16px;
+  position: relative;
+  left: 47px;
+  top: 0px;
   border: 2px 0px 0px 0px;
   gap: 0px;
   opacity: 0px;
@@ -111,14 +117,14 @@ background-size: cover; */
 }
 
 .nav-login-cart .cart {
-  width: 21px;
-  height: 20px;
-  /* top: 23.5px;
-  left: 1187px; */
+  width: 26px;
+  height: 25px;
   /* gap: 0px; */
   /* border: 108px 0px 0px 0px; */
   /* opacity: 0px; */
   cursor: pointer;
+  position: relative;
+  left: 40px
 }
 
 .nav-cart-count {
@@ -127,8 +133,8 @@ background-size: cover; */
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -23px;
-  margin-left: -36px;
+  margin-top: -25px;
+  /*margin-left: 0px;*/
   border-radius: 21px;
   font-size: 12px;
   background-color: black;
@@ -153,4 +159,8 @@ background-size: cover; */
 .nav-login-cart .profile {
   cursor: pointer;
   display: flex;
+  position: relative;
+  left: 25px;
+  width: 32px;
+  height: 32px;
 }
