@@ -1,0 +1,78 @@
+/* Custom CSS for Carousel Images */
+/* .carousel-img {
+  width: 50%;
+  height: auto;
+} */
+
+/* .carousel-item {
+  text-align: center; 
+} */
+
+/* CustomCarousel.css */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+  margin: 0 auto;
+  overflow: visible;
+  top: 90px;
+  left: -352px;
+}
+
+.slide {
+  display: none;
+  height: 400px; /* Adjust as needed */
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1s ease;
+}
+
+.slide.active {
+  display: block;
+}
+
+.image-overlay {
+  /* position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px; */
+
+  width: 186%;
+  display: flex;
+  position: relative;
+  height: 378px;
+  top: 0px;
+  left: -325px;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.image-overlay h2 {
+  color: #fff;
+  margin: 0;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 18px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}

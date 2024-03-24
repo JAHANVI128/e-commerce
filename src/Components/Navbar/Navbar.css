@@ -46,6 +46,7 @@ background-size: cover; */
 
 .navbar {
   display: flex;
+  position: fixed;
   justify-content: space-around;
   /* padding: 16px; */
   width: 1600px;

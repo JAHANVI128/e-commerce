@@ -13,11 +13,13 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
+      
       <div className="nav-logo">
-      <Link style={{textDecoration : 'none'}} to = '/'>
-        <img src={logo} alt="Logo" />
-      </Link>
+        <Link style={{textDecoration : 'none'}} to = '/'>
+          <img src={logo} alt="Logo" />
+        </Link>
       </div>
+
       <ul className="nav-menu">
         <SearchBar />
 
@@ -34,18 +36,19 @@ const Navbar = () => {
           <div className="nav-order-count">1</div>
         </li>
       </ul>
+
       <div className="nav-login-cart">
-        <Link style={{textDecoration : 'none'}}>
+        <Link style={{textDecoration : 'none'}} to='/like'>
           <img className="like" src={like} alt="Like" />
         </Link>
 
-        <Link style={{textDecoration : 'none'}}>
+        <Link style={{textDecoration : 'none'}} to='/cart'>
           <img className="cart" src={cart} alt="Cart" />
         </Link>
 
         <div className="nav-cart-count">0</div>
 
-        <Link style={{textDecoration : 'none'}}>
+        <Link style={{textDecoration : 'none'}} to='/profile'>
           <img className="profile" src={profile} alt="Profile" />
         </Link>
       </div>
