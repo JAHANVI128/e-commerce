@@ -24,15 +24,15 @@ const Navbar = () => {
         <SearchBar />
 
         <li onClick={ () => { setmenu("home") }}> 
-          <Link style={{textDecoration : 'none'}} to = '/'> Home </Link> {menu === "home" ? <hr /> : <></>}
+          <Link style={{textDecoration : 'none'}} to = '/'> Home </Link> {menu === "home"}
         </li>
 
         <li onClick={() => { setmenu("categories") }}>
-          <Link style={{textDecoration : 'none'}} to = '/category'> Categories </Link> {menu === "categories" ? <hr /> : <></>}
+          <Link style={{textDecoration : 'none'}} to = '/category'> Categories </Link> {menu === "categories"}
         </li>
 
         <li onClick={() => { setmenu("orders") }}>
-          <Link style={{textDecoration : 'none'}} to = '/orders'> Orders </Link> {menu === "orders" ? <hr /> : <></>}
+          <Link style={{textDecoration : 'none'}} to = '/orders'> Orders </Link> {menu === "orders"}
           <div className="nav-order-count">1</div>
         </li>
       </ul>

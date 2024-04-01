@@ -1,49 +1,3 @@
-/* Property 1=Variant2 */
-
-/* position: absolute;
-width: 1091px;
-height: 378px;
-left: calc(50% - 1091px/2 + 13.5px);
-top: 539px;
-
-border-radius: 20px; */
-
-/* Rectangle 3 */
-
-/* position: absolute;
-left: -113.93%;
-right: 113.93%;
-top: 0%;
-bottom: 0.13%;
-
-background: url(image.png);
-border-radius: 18px; */
-
-/* Rectangle 3 */
-
-/* position: absolute;
-left: -226.21%;
-right: 226.21%;
-top: 0%;
-bottom: 0.13%;
-
-background: url(image.png), url(image.png);
-border-radius: 18px; */
-
-/* Rectangle 4 */
-
-/* position: absolute;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0.13%;
-
-background: url(image.png), url(image.png);
-border-radius: 18px; */
-/* // Image: image;
-background: url("image.png");
-background-size: cover; */
-
 .navbar {
   display: flex;
   position: fixed;
@@ -93,7 +47,8 @@ background-size: cover; */
   gap: 1px;
   cursor: pointer;
   top: 5.5px;
-  left: -372px;
+  left: 80px;
+  margin-left: 5px;
 }
 
 .nav-login-cart {

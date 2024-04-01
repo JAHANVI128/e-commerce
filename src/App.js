@@ -35,9 +35,9 @@ function App() {
 
         {/* <SlideCarousel/> */}
 
-        <div className='main-page'>
+        {/* <div className='main-page'>
           <Carousel images={images} />
-        </div>
+        </div> */}
 
         <Routes>
           <Route path='/' element={<Home />} />
