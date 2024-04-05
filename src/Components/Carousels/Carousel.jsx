@@ -1,7 +1,7 @@
 // import Carousel from 'react-bootstrap/Carousel';
-//  import C1 from '../Assets/C1.png'
-//  import C2 from '../Assets/C2.png'
-//  import C3 from '../Assets/C3.png'
+ import C1 from '../Assets/C1.png'
+ import C2 from '../Assets/C2.png'
+ import C3 from '../Assets/C3.png'
 // import CarouselItem from 'react-bootstrap/CarouselItem'
 
 // function SlideCarousel() {
@@ -56,39 +56,63 @@
 // export default SlideCarousel;
 
 // CustomCarousel.js
-import React, { useState } from 'react';
-import './Carousel.css'; // Import custom CSS for styling
+// import React, { useState } from 'react';
+// import './Carousel.css'; // Import custom CSS for styling
 
-const Carousel = ({ images }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+// const Carousel = ({ images }) => {
+//   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const goToNextSlide = () => {
-    const nextIndex = currentIndex === images.length - 1 ? 0 : currentIndex + 1;
-    setCurrentIndex(nextIndex);
-  };
+//   const goToNextSlide = () => {
+//     const nextIndex = currentIndex === images.length - 1 ? 0 : currentIndex + 1;
+//     setCurrentIndex(nextIndex);
+//   };
 
-  const goToPrevSlide = () => {
-    const prevIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1;
-    setCurrentIndex(prevIndex);
-  };
+//   const goToPrevSlide = () => {
+//     const prevIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1;
+//     setCurrentIndex(prevIndex);
+//   };
 
+//   return (
+//     <div className="carousel">
+//       {images.map((image, index) => (
+//         <div
+//           key={index}
+//           className={index === currentIndex ? "slide active" : "slide"}
+//           style={{ backgroundImage: `url(${image.src})` }}
+//         >
+//           <div className="image-overlay">
+//             <h2>{image.alt}</h2>
+//           </div>
+//         </div>
+//       ))}
+//       <button className="prev" onClick={goToPrevSlide}>&#10094;</button>
+//       <button className="next" onClick={goToNextSlide}>&#10095;</button>
+//     </div>
+//   );
+// };
+
+// export default Carousel;
+
+import React from 'react'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+export const Carousel = () => {
   return (
-    <div className="carousel">
-      {images.map((image, index) => (
-        <div
-          key={index}
-          className={index === currentIndex ? "slide active" : "slide"}
-          style={{ backgroundImage: `url(${image.src})` }}
-        >
-          <div className="image-overlay">
-            <h2>{image.alt}</h2>
-          </div>
+    <section className="carousel">
+      <div className="container">
+        <div className="carousel__item">
+          <img src={C1} alt="carousel item" />
         </div>
-      ))}
-      <button className="prev" onClick={goToPrevSlide}>&#10094;</button>
-      <button className="next" onClick={goToNextSlide}>&#10095;</button>
-    </div>
-  );
-};
+        <div className="carousel__item">
+          <img src={C2} alt="carousel item" />
+        </div>
+        <div className="carousel__item">
+          <img src={C3} alt="carousel item" />
+        </div>
+      </div>
+    </section>
+  )
+}
 
-export default Carousel;
+export default Carousel
