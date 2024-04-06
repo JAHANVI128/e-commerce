@@ -17,9 +17,10 @@ import Shop from './Pages/Shop.jsx';
         <BrowserRouter>
           <Navbar />
 
-          {/* <div className="App">
+          <div className="App">
             <ImageSlider images={images} />
-          </div> */}
+          </div>
+          
           <Shop/>
           <Routes>
             <Route path='/' element={<Home />} />

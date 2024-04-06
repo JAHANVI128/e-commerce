@@ -19,6 +19,36 @@ let data_product = [
         image: D1,
         new_price: 100,
         old_price: 250
+    },{
+        id: 4,
+        name: "Our Product BOX v340 zabronics mouse with rgb and bollox and mecahnic jeyboard",
+        image: D1,
+        new_price: 100,
+        old_price: 250
+    },{
+        id: 5,
+        name: "Our Product BOX v340 zabronics mouse with rgb and bollox and mecahnic jeyboard",
+        image: D1,
+        new_price: 100,
+        old_price: 250
+    },{
+        id: 6,
+        name: "Our Product BOX v340 zabronics mouse with rgb and bollox and mecahnic jeyboard",
+        image: D1,
+        new_price: 100,
+        old_price: 250
+    },{
+        id: 7,
+        name: "Our Product BOX v340 zabronics mouse with rgb and bollox and mecahnic jeyboard",
+        image: D1,
+        new_price: 100,
+        old_price: 250
+    },{
+        id: 8,
+        name: "Our Product BOX v340 zabronics mouse with rgb and bollox and mecahnic jeyboard",
+        image: D1,
+        new_price: 100,
+        old_price: 250
     }
 ]
 
