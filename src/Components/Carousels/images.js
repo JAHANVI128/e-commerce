@@ -1,6 +1,6 @@
 import  C1  from '../Assets/C1.png'
-import  C2  from '../Assets/C1.png'
-import  C3  from '../Assets/C1.png'
+import  C2  from '../Assets/C2.png'
+import  C3  from '../Assets/C3.png'
 
 const images = [
     {

@@ -1,0 +1,39 @@
+.main-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 90vh;
+  /* scrollbar-width: 0; */
+}
+
+.main-category h2 {
+  font-family: Poppins;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 40.5px;
+  /* text-align: left; */
+}
+
+.main-brands {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: hidden; /* Disable vertical scrolling */
+  white-space: nowrap; /* Prevent wrapping of content */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none;
+}
+
+.element {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Disable vertical scrolling */
+    white-space: nowrap; /* Prevent wrapping of content */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+}
+
+.element::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}

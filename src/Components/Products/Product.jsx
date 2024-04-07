@@ -1,14 +1,14 @@
-import React from "react";
-import "./Offer.css";
-import offer1 from "../Assets/offer";
+import React from 'react'
+import data_product from '../Assets/data';
 import Item from "../Item/Item";
+import './Product.css'
 
-const Offer = () => {
+const Product = () => {
   return (
-    <div className="offers">
-      <h1>Offers Only For You</h1>
-      <div className="product">
-        {offer1.map((item, i) => {
+    <div className="products">
+      <h2>All Products</h2>
+      <div className="product-item">
+        {data_product.map((item, i) => {
           return (
             <Item
               key={i}
@@ -22,7 +22,7 @@ const Offer = () => {
         })}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Offer;
+export default Product

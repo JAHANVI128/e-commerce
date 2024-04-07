@@ -1,3 +1,4 @@
-.main-page {
-  background-color: #f8f8ff;
+.app {
+  overflow-y: hidden;
+  /* overflow-x: auto; */
 }
