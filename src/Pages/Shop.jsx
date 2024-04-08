@@ -5,6 +5,7 @@ import Categories from '../Components/Category/Categories'
 import images from "../Components/Carousels/images.js";
 import ImageSlider from "../Components/Carousels/ImageSlider.js";
 import Product from '../Components/Products/Product.jsx';
+import Footer from '../Components/Footer/Footer.jsx';
 
 const Shop = () => {
   return (
@@ -19,6 +20,8 @@ const Shop = () => {
       <Offer/>
 
       <Product/>
+
+      <Footer/>
     </div>
   );
 }

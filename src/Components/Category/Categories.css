@@ -4,6 +4,7 @@
   align-items: center;
   gap: 10px;
   height: 90vh;
+  padding-left: 30%;
   /* scrollbar-width: 0; */
 }
 

@@ -20,7 +20,7 @@ function App() {
 
         <Shop />
         <Routes>
-          <Route path='/' element={<Home />} />
+          {/* <Route path='/' element={<Home />} /> */}
           <Route path='/category' element={<Category />} />
           <Route path='/category/corporate-printer' element={<Category cat="cp" />} />    {/*cat = category , cp = corporate printer */}
           <Route path='/category/mouse' element={<Category cat="mouse" />} />
