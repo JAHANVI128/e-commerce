@@ -8,7 +8,9 @@ import Product from './Components/Products/Product.jsx';
 import Cart from './Pages/Cart';
 import './App.css'
 import Shop from './Pages/Shop.jsx';
-import { useEffect, useState } from 'react';
+import ImageSlider from './Components/Carousels/ImageSlider.js';
+import images from './Components/Carousels/images.js';
+import Footer from './Components/Footer/Footer.jsx';
 
 function App() {
 
@@ -18,9 +20,13 @@ function App() {
    
         <Navbar />
 
+        <ImageSlider images={images} />
+
         <Shop />
+        
+        <Footer/>
+
         <Routes>
-          {/* <Route path='/' element={<Home />} /> */}
           <Route path='/category' element={<Category />} />
           <Route path='/category/corporate-printer' element={<Category cat="cp" />} />    {/*cat = category , cp = corporate printer */}
           <Route path='/category/mouse' element={<Category cat="mouse" />} />

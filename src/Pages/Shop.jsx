@@ -6,23 +6,26 @@ import images from "../Components/Carousels/images.js";
 import ImageSlider from "../Components/Carousels/ImageSlider.js";
 import Product from '../Components/Products/Product.jsx';
 import Footer from '../Components/Footer/Footer.jsx';
+import { Container } from 'react-bootstrap'
 
 const Shop = () => {
   return (
-    <div  className="shop">
+    <Container fluid="md">
+      <div  className="shop">
 
-      <ImageSlider images={images} />
-          
-      <Categories/>
+        {/* <ImageSlider images={images} /> */}
+            
+        <Categories/>
 
-      <Popular/>
+        <Popular/>
 
-      <Offer/>
+        <Offer/>
 
-      <Product/>
+        <Product/>
 
-      <Footer/>
-    </div>
+        {/* <Footer/> */}
+      </div>
+    </Container>
   );
 }
 

@@ -9,24 +9,22 @@ import app from "../Assets/App.png"
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="footer-links">
-        <h4>Popular Searches</h4>
-      </div>
-
-      <ul>
+      <h4>Popular Searches</h4>
+      <ul className="footer-links">
         <li>Mouse |</li>
-        <li>Samsung SSD |</li>
-        <li>1TB Haed Disk |</li>
-        <li>samsung tab charger |</li>
-        <li>oneplus charger </li>
-        <li> Gaming Pad |</li>
-        <li>RBG Keyboard |</li>
-        <li>CPU coller</li>
+        <li> Samsung SSD |</li>
+        <li> 1TB Haed Disk |</li>
+        <li> samsung tab charger |</li>
+        <li> oneplus charger </li>
+        <ul className="footer-product">
+          <li>RBG Keyboard |</li>
+          <li> Gaming Pad |</li>
+          <li> CPU coller</li>
+        </ul>
       </ul>
 
       <div className="footer-category">
         <h4>Categories</h4>
-      </div>
 
       <ul>
         <li>Category 1</li>
@@ -34,6 +32,7 @@ const Footer = () => {
         <li>Category 3</li>
         <li>Category 4</li>
       </ul>
+      </div>
       <div className="footer-policy">
         <h4>Customer Policy</h4>
       </div>

@@ -6,14 +6,33 @@ import cart from "../Assets/Cart.png";
 import profile from "../Assets/Profile.png";
 import SearchBar from './SearchBar'
 import { Link } from "react-router-dom";
+import useWindowSize from "../../utils/useWindowSize";
+// import { useMediaQuery } from 'react-responsive'
 
 const Navbar = () => {
 
+  // const isDesktopOrLaptop = useMediaQuery({
+  //   query: '(min-width: 1224px)'
+  // })
+
+  // const isDesktopOrLaptop = useMediaQuery(
+  //   { minDeviceWidth: 1224 },
+  //   { deviceWidth: 1600 } // `device` prop
+  // )
+
+  // const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' })
+  // const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+  // const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
+  // const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
   const [menu, setmenu] = useState("home");
+
+  const { width } = useWindowSize();
 
   return (
     <div className="navbar">
-      
+      {width > 500 && (
+        <>
+          
       <div className="nav-logo">
         <Link style={{textDecoration : 'none'}} to = '/'>
           <img src={logo} alt="Logo" />
@@ -52,6 +71,8 @@ const Navbar = () => {
           <img className="profile" src={profile} alt="Profile" />
         </Link>
       </div>
+        </>
+      )}
     </div>
   );
 };

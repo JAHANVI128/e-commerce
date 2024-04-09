@@ -1,3 +1,90 @@
 .footer{
-    
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    left: 20px;
+    width: 1366px;
+height: 239px;
+top: 3553px;
+left: -5px;
+gap: 0px;
+opacity: 0px;
+background-color: #7d7f83;
+}
+
+.footer-links{
+    display: flex;
+    list-style: none;
+    gap: 1px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+    cursor: pointer;
+    top: 0px;
+    left: 60px;
+    position: relative;
+}
+
+.footer-product{
+    display: flex;
+    list-style: none;
+    gap: 1px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+    position: relative;
+    left: -587px;
+    bottom: -19px;
+    cursor: pointer;
+}
+
+.footer-category{
+    display: flex;
+    list-style: none;
+    gap: 1px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: center;
+    position: relative;
+    left: 160px;
+    bottom: -38px;
+    cursor: pointer;
+}
+
+.footer-category li{
+    list-style: none;
+    gap: 1px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: center;
+    position: relative;
+    left: 160px;
+    bottom: -38px;
+    cursor: pointer;
+}
+
+.footer-social-icon{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    left: 70px;
+    bottom: 10px;
+}
+
+.footer-icons-container{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    left: 90px;
+    bottom: 9px;
+    width: 22px;
+    height: 22px;
 }

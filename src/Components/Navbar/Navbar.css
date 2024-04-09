@@ -3,9 +3,9 @@
   position: sticky;
   justify-content: space-around;
   /* padding: 16px; */
-  width: 1600px;
-  height: 70px;
-  gap: 9px;
+  width: 1366px;
+  height: 67px;
+  gap: 29px;
   opacity: 0px;
   box-shadow: 0px -2px 10px 0px #00000040;
   z-index: 1;
@@ -18,7 +18,8 @@
   width: 119px;
   height: 67px;
   position: relative;
-  left: -83px;
+  left: 83px;
+  top: -7px;
   opacity: 0px;
 }
 
@@ -49,7 +50,8 @@
   cursor: pointer;
   top: 5.5px;
   left: 80px;
-  margin-left: 5px;
+  padding: 1rem;
+  /* margin-left: 5px; */
 }
 
 .nav-login-cart {
@@ -119,4 +121,8 @@
   left: 25px;
   width: 32px;
   height: 32px;
+}
+
+@media screen {
+  
 }
