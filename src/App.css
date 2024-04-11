@@ -1,5 +1,5 @@
 /* @import '~bootstrap/scss/bootstrap'; */
 .app {
-  overflow-y: hidden;
+  overflow-x: hidden;
   /* overflow-x: auto; */
 }

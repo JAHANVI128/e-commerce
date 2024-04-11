@@ -1,0 +1,15 @@
+.shopcategory-sort{
+    padding: 13px 22px;
+    border-radius: 2px;
+    background-color: black;
+    color: #fff;
+    width: 108px;
+    height: 50px;
+}
+
+.shopcategory-products{
+    margin: 20px 170px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 80px;
+}

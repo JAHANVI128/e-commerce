@@ -67,7 +67,7 @@ const Navbar = () => {
 
         <div className="nav-cart-count">0</div>
 
-        <Link style={{textDecoration : 'none'}} to='/profile'>
+        <Link style={{textDecoration : 'none'}} to='/login'>
           <img className="profile" src={profile} alt="Profile" />
         </Link>
       </div>
