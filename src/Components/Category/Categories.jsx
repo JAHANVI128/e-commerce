@@ -3,6 +3,7 @@ import Cat1 from '../Assets/Cat1.png'
 import Cat2 from '../Assets/Cat2.png'
 import Cat3 from '../Assets/Cat3.png'
 import Cat4 from '../Assets/Cat4.png'
+import './Categories.css'
 
 const Categories = () => {
   return (

@@ -1,11 +1,13 @@
 .main-category {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   gap: 10px;
-  height: 90vh;
-  padding-left: 30%;
-  /* scrollbar-width: 0; */
+  height: 70vh;
+  width: 100%;
+  border-radius: 5px 0px 0px 0px;
+  opacity: 1;
+  margin-top: 7%;
 }
 
 .main-category h2 {
@@ -13,28 +15,42 @@
   font-size: 27px;
   font-weight: 600;
   line-height: 40.5px;
-  /* text-align: left; */
+  text-align: left;
 }
 
 .main-brands {
-  margin-top: 50px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  opacity: 0px;
+  border-radius: 5px;
+}
+
+.main-brands::-webkit-scrollbar {
+    display: none; 
+}
+
+.main-brands img{
+  display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr;  */
+  align-items: center;
+  box-sizing: border-box;
+  width: 225px;
+  height: 270px;
+  border-radius: 5px;
+  background-color: #fff;
   gap: 30px;
-  overflow-x: auto; /* Enable horizontal scrolling */
-  overflow-y: hidden; /* Disable vertical scrolling */
-  white-space: nowrap; /* Prevent wrapping of content */
-  scrollbar-width: none; /* Hide scrollbar for Firefox */
-  -ms-overflow-style: none;
+  /* border: 0.5px solid rgba(205, 189, 189, 1); */
 }
 
-.element {
-    overflow-x: auto; /* Enable horizontal scrolling */
-    overflow-y: hidden; /* Disable vertical scrolling */
-    white-space: nowrap; /* Prevent wrapping of content */
-    scrollbar-width: none; /* Hide scrollbar for Firefox */
-    -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
-}
-
-.element::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+@media only screen and (max-width: 600px) {
+  .main-category {
+    
+  }
 }

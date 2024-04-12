@@ -13,3 +13,13 @@
 .imgslider {
   padding-top: 50px;
 }
+
+/* @media screen and (max-width: 600px){
+  .imgslider{
+    width: 356px;
+height: 182px;
+gap: 0px;
+opacity: 0px;
+
+  }
+} */

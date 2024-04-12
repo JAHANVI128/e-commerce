@@ -5,7 +5,6 @@ import twitter from "../Assets/Frame 40.png";
 import facebook from "../Assets/devicon_facebook.png";
 import gmail from "../Assets/skill-icons_gmail-light.png";
 import app from "../Assets/en_badge_web_generic.png";
-import play from "../Assets/android-app-store-app-store-and-android-icons-11553546864dl6gbnzyt2.png";
 
 const Footer = () => {
   return (

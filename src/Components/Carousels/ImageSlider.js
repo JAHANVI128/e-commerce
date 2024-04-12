@@ -7,12 +7,23 @@ import React from "react";
 const ImageSlider = ({ images }) => {
 	const settings = {
 		infinite: true,
+		arrows: true,
 		dots: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		lazyLoad: true,
 		autoplay: true,
 		autoplaySpeed: 2000,
+		adaptiveHeight: true,
+		responsive: [
+			{
+			  breakpoint: 360,
+			  settings: {
+				arrows: false,
+				dots: true
+			  }
+			}
+		  ]
 	};
 	return (
 		<>
