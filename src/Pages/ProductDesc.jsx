@@ -5,12 +5,12 @@ import ProductDisplay from '../Components/ProductDisplay/ProductDisplay';
 
 const ProductDesc = () => {
 
-    const {all_product} = useContext(ShopContext);
+    // const {all_product} = useContext(ShopContext);
     const {productId} = useParams();
-    const product = all_product.find((e) => e.id === Number(productId));
+    
   return (
     <div>
-        <ProductDisplay product={product}/>
+        <ProductDisplay/>
     </div>
   )
 }

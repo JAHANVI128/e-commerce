@@ -10,6 +10,8 @@ import ImageSlider from './Components/Carousels/ImageSlider.js';
 import images from './Components/Carousels/images.js';
 import Footer from './Components/Footer/Footer.jsx';
 import ShopCategory from './Pages/ShopCategory.jsx';
+import ProductDisplay from './Components/ProductDisplay/ProductDisplay.jsx';
+import ProductDesc from './Pages/ProductDesc.jsx';
 
 function App() {
 
@@ -26,13 +28,10 @@ function App() {
         <Routes>
           <Route path='/' element={<Shop/>}/>
           <Route path='/category' element={<ShopCategory category=""/>} />
-          <Route path='/category/corporate-printer' element={<ShopCategory category="cp" />} />    {/*cat = category , cp = corporate printer */}
-          <Route path='/category/mouse' element={<ShopCategory category="mouse" />} />
-          <Route path='/category/computer-accessories' element={<ShopCategory category="ca" />} />     {/*ca = computer accessories */}
-          <Route path='/category/storage-devices' element={<ShopCategory category="sd" />} />      {/*sd = storage devices */}
+          <Route path='/category/:category'  element={<ShopCategory />} />    {/*cat = category , cp = corporate printer */}
 
-          <Route path='/products' element={<Product />}>
-            <Route path=':pid' element={<Product />} />    {/*pid = product id */}
+          <Route path='/product/:pid' element={<ProductDesc />}>
+            
           </Route>
 
           <Route path='/orders' element={<Orders />} />
@@ -41,7 +40,7 @@ function App() {
         </Routes>
 
         
-        <Footer/>
+        {/* <Footer/> */}
       </BrowserRouter>
     </div>
   );
