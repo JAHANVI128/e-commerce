@@ -28,7 +28,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Shop/>}/>
           <Route path='/category' element={<ShopCategory category=""/>} />
-          <Route path='/category/:category'  element={<ShopCategory />} />    {/*cat = category , cp = corporate printer */}
+          <Route path='/category/:categoryname'  element={<ShopCategory />} />    {/*cat = category , cp = corporate printer */}
 
           <Route path='/product/:pid' element={<ProductDesc />}>
             
