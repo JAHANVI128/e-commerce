@@ -10,7 +10,7 @@
   z-index: 1;
 }
 
-.nav-logo {
+.nav-logo img {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -27,11 +27,11 @@
   list-style: none;
   width: 51px;
   height: 22px;
-  gap: 45px;
+  gap: 30px;
   font-family: Inter, "Courier New", Courier, monospace;
   font-size: 18px;
-  margin-left: -500px;
-    padding-left: 50px;
+  /* margin-left: -75px; */
+    /* padding-left: 50px; */
     margin-top: 4px;
 }
 
@@ -67,10 +67,10 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  position: relative;
-  left: -135px;
-  top: -2px;
+  margin-left: 205px;
+  margin-top: -5px;
   border-left: 1px groove black;
+  padding-left: 2px;
 }
 
 .nav-login-cart .like {
@@ -99,7 +99,7 @@
   justify-content: center;
   align-items: center;
   margin-top: -25px;
-  /*margin-left: 0px;*/
+  margin-left: 7px;
   border-radius: 21px;
   font-size: 12px;
   background-color: black;
@@ -115,6 +115,88 @@
   height: 32px;
 }
 
-@media screen {
-  
+@media(max-width:1280px) {
+  .navbar{
+    padding: 10px;
+  }
+
+  .nav-logo img{
+    width: 90%;
+  }
+
+  .nav-menu{
+    font-size: 16px;
+    gap: 10px;
+    margin-left: -75px;
+  }
+
+  .nav-order-count {
+    width: 18px;
+    height: 18px;
+  }
+
+  .nav-login-cart{
+    gap: 10px;
+    /* padding-left: 3px; */
+    margin-left: 160px;
+  }
+
+  .nav-login-cart .like {
+    width: 22px;
+    height: 20.16px;
+  }
+
+  .nav-login-cart .cart {
+    width: 23px;
+    height: 23px;
+  }
+
+  .nav-cart-count {
+    width: 18px;
+    height: 18px;
+    margin-left: 20px;
+    margin-top: -20px;
+    font-size: 10px;
+  }
+
+}
+
+@media(max-width:1160px){
+
+  .navbar{
+    overflow: hidden;
+  }
+  .nav-logo img{
+    width: 80%;
+    height: 70px;
+  }
+}
+
+@media(max-width:1090px){
+
+  .nav-login-cart .like {
+    left: 20px;
+  }
+
+  .nav-login-cart .cart{
+    left: 35px;
+  }
+
+  .nav-login-cart .profile {
+    left: 10px;
+  }
+}
+
+@media(max-width:990px){
+  .nav-menu{
+    font-size: 14px;
+    gap: 10px;
+    margin-left: -75px;
+  }
+
+  .nav-order-count {
+    font-size: 10px;
+    margin-top: -21px;
+    margin-left: 50px;
+  }
 }
