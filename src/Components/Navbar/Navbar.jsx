@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./Navbar.css";
 import logo from "../Assets/logo.png";
 import like from "../Assets/Like.png";
@@ -8,9 +8,16 @@ import SearchBar from "./SearchBar";
 import { Link } from "react-router-dom";
 import useWindowSize from "../../utils/useWindowSize";
 import searchIcon from "../Assets/Vector.svg";
+import hamburger from "../Assets/hamburger-menu.png";
 
 const Navbar = () => {
   const [menu, setmenu] = useState("home");
+  const menuRef = useRef();
+
+  const toggle = (e) => {
+    menuRef.current.classList.toggle('nav-menu-visible');
+    e.target.classList.toggle('open');
+  }
 
   return (
     <div className="navbar">
@@ -23,7 +30,8 @@ const Navbar = () => {
         <SearchBar />
       </div>
 
-      <ul className="nav-menu">
+      <img className="toggle-menu" onClick={toggle} src={hamburger} alt="" />
+      <ul ref={menuRef} className="nav-menu">
 
           <li onClick={ () => { setmenu("home") }}>
             <Link style={{textDecoration : 'none'}} to = '/'> Home </Link> {menu === "home"}
