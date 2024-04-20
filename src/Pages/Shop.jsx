@@ -13,7 +13,7 @@ const Shop = () => {
     <Container fluid="md">
       <div  className="shop">
 
-        {/* <ImageSlider images={images} />
+        <ImageSlider images={images} />
             
         <Categories/>
 
@@ -21,9 +21,9 @@ const Shop = () => {
 
         <Offer/>
 
-        <Product/> */}
+        <Product/> 
 
-        {/* <Footer/> */}
+        <Footer/>
       </div>
     </Container>
   );

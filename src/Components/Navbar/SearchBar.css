@@ -48,3 +48,25 @@
     margin-top: -10px;
   }
 }
+
+@media(max-width:530px){
+  .searchBarSection input{
+    display: block;
+    order: 3;
+    position: relative;
+        top: 35px;
+        margin-left: 23px;
+        width: 380px;
+  }
+
+  .searchBar{
+    top: 33px;
+    left: 33px;
+  }
+}
+
+@media(max-width:440px){
+  .searchBarSection input{
+    width: 335px;
+  }
+}
